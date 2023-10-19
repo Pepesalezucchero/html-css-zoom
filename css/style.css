@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(70, 67, 67);
+    background-color: black;
 }
 
  /*sopra*/
@@ -41,7 +41,7 @@ ul {
 /*centro*/
 .center-container {
     width: 100vw;
-    padding: 3%;
+    padding: 4% 0;
     text-align: center;
 }
 
@@ -64,10 +64,63 @@ img {
 }
 
 /*sotto*/
+.lower-container {
+    position: fixed;
+    height: 7vh;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+}
 
+.lower-container .left-functions {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    background-color: rgb(37, 37, 37);    
+    width: 10%;
+    color: white;
+}
+
+.lower-container .center-functions {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);    
+    width: 80%;
+    color: white;
+}
+
+.lower-container .right-functions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 10%;
+    color: red;
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+    padding: 0 8px;
+    cursor: pointer;
+}
 
 /*colori e stili*/
 [target="color"] {
     color: white;
     background-color: rgba(172, 11, 11, 0.493);
+}
+
+[target="size-big"] {
+    font-size: 30px;
+    text-align: center;
+}
+
+[target="size-small"] {
+    font-size: 10px;
+    padding: 0 10px;
 }
