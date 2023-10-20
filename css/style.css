@@ -40,9 +40,11 @@ ul {
 
 /*centro*/
 .center-container {
-    width: 100vw;
-    padding: 4% 0;
+    width: 100%;
+    height: calc((100vh - 35px) - 55px);
+    padding-top: 2%;
     text-align: center;
+    overflow-y: auto;
 }
 
 .user-container div {
@@ -66,7 +68,7 @@ img {
 /*sotto*/
 .lower-container {
     position: fixed;
-    height: 7vh;
+    height: 56px;
     bottom: 0;
     display: flex;
     justify-content: space-between;
